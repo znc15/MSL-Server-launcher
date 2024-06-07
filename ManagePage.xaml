@@ -28,7 +28,7 @@
                                 <TextBlock Text="{Binding Address}" FontSize="14"/>
                                 <TextBlock Text="{Binding Port}" FontSize="14"/>
                                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                                    <Button Content="启动" Click="StartServerButton_Click"/>
+                                    <Button Content="启动" Margin="5,0,0,0" Click="StartServerButton_Click"/>
                                     <Button Content="编辑" Margin="5,0,0,0" Click="EditServerButton_Click"/>
                                     <Button Content="删除" Margin="5,0,0,0" Click="DeleteServerButton_Click"/>
                                 </StackPanel>
