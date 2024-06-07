@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "Minecraft Server 启动器 (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Minecraft Server 启动器 (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

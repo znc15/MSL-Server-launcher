@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="MinecraftServerLauncher.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MinecraftServerLauncher"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Spacing="20" Padding="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Margin="0,50,0,0">
+            <Image Source="https://i1.mcobj.com/imgb/u15prb/20240605_6660113523ced.png" Width="100" Height="100" Margin="0,0,0,45" HorizontalAlignment="Center"/>
+            <TextBlock Text="Minecraft Server Launcher" FontSize="25" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <TextBlock Text="更适合小白的服务器管理软件" FontSize="15" HorizontalAlignment="Center"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="20">
+            <HyperlinkButton Content="前往官网" NavigateUri="https://yourwebsite.com"/>
+            <HyperlinkButton Content="前往反馈" NavigateUri="https://yourfeedback.com"/>
+            <HyperlinkButton Content="贡献翻译" NavigateUri="https://yourtranslation.com"/>
+            <HyperlinkButton Content="赞助我们" NavigateUri="https://yoursponsorship.com"/>
+        </StackPanel>
+
+        <TextBlock Text="Copyright © 2024 - Now TCB Work. All Rights Reserved."
+                   HorizontalAlignment="Center" Margin="0,10,0,0"/>
+    </StackPanel>
+</Page>

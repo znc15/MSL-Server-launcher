@@ -1,0 +1,148 @@
+﻿<Page
+    x:Class="MinecraftServerLauncher.DownloadPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid Padding="20">
+        <StackPanel>
+            <!-- Purpur 下载界面 -->
+            <Border Background="White" CornerRadius="10" Padding="20" Margin="0,20,0,20" BorderBrush="LightGray" BorderThickness="1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Center">
+                        <TextBlock Text="Purpur" FontSize="18" FontWeight="Bold"/>
+                        <TextBlock Text="Purpur服务器端的介绍" FontSize="14" Opacity="0.7"/>
+                    </StackPanel>
+                    <ComboBox x:Name="PurpurVersionComboBox" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Width="200" Margin="0,0,10,0">
+                        <!-- 版本号选项 -->
+                        <ComboBoxItem Content="1.15"/>
+                        <ComboBoxItem Content="1.15.1"/>
+                        <ComboBoxItem Content="1.15.2"/>
+                        <ComboBoxItem Content="1.16"/>
+                        <ComboBoxItem Content="1.16.1"/>
+                        <ComboBoxItem Content="1.16.2"/>
+                        <ComboBoxItem Content="1.16.3"/>
+                        <ComboBoxItem Content="1.16.4"/>
+                        <ComboBoxItem Content="1.16.5"/>
+                        <ComboBoxItem Content="1.17"/>
+                        <ComboBoxItem Content="1.17.1"/>
+                        <ComboBoxItem Content="1.18"/>
+                        <ComboBoxItem Content="1.18.1"/>
+                        <ComboBoxItem Content="1.18.2"/>
+                        <ComboBoxItem Content="1.19"/>
+                        <ComboBoxItem Content="1.19.1"/>
+                        <ComboBoxItem Content="1.19.2"/>
+                        <ComboBoxItem Content="1.19.3"/>
+                        <ComboBoxItem Content="1.19.4"/>
+                        <ComboBoxItem Content="1.20"/>
+                        <ComboBoxItem Content="1.20.1"/>
+                        <ComboBoxItem Content="1.20.2"/>
+                        <ComboBoxItem Content="1.20.3"/>
+                        <ComboBoxItem Content="1.20.4"/>
+                        <ComboBoxItem Content="1.20.5"/>
+                        <ComboBoxItem Content="1.20.6"/>
+                    </ComboBox>
+                    <Button x:Name="PurpurDownloadButton" Content="下载" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+
+            <!-- Paper 下载界面 -->
+            <Border Background="White" CornerRadius="10" Padding="20" Margin="0,20,0,20" BorderBrush="LightGray" BorderThickness="1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Center">
+                        <TextBlock Text="Paper" FontSize="18" FontWeight="Bold"/>
+                        <TextBlock Text="Paper服务器端的介绍" FontSize="14" Opacity="0.7"/>
+                    </StackPanel>
+                    <ComboBox x:Name="PaperVersionComboBox" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Width="200" Margin="0,0,10,0">
+                        <!-- 版本号选项 -->
+                        <ComboBoxItem Content="1.12"/>
+                        <ComboBoxItem Content="1.12.1"/>
+                        <ComboBoxItem Content="1.12.2"/>
+                        <ComboBoxItem Content="1.13"/>
+                        <ComboBoxItem Content="1.13.1"/>
+                        <ComboBoxItem Content="1.13.2"/>
+                        <ComboBoxItem Content="1.14"/>
+                        <ComboBoxItem Content="1.14.1"/>
+                        <ComboBoxItem Content="1.14.2"/>
+                        <ComboBoxItem Content="1.14.3"/>
+                        <ComboBoxItem Content="1.14.4"/>
+                        <ComboBoxItem Content="1.15"/>
+                        <ComboBoxItem Content="1.15.1"/>
+                        <ComboBoxItem Content="1.15.2"/>
+                        <ComboBoxItem Content="1.16"/>
+                        <ComboBoxItem Content="1.16.1"/>
+                        <ComboBoxItem Content="1.16.2"/>
+                        <ComboBoxItem Content="1.16.3"/>
+                        <ComboBoxItem Content="1.16.4"/>
+                        <ComboBoxItem Content="1.16.5"/>
+                        <ComboBoxItem Content="1.17"/>
+                        <ComboBoxItem Content="1.17.1"/>
+                        <ComboBoxItem Content="1.18"/>
+                        <ComboBoxItem Content="1.18.1"/>
+                        <ComboBoxItem Content="1.18.2"/>
+                        <ComboBoxItem Content="1.19"/>
+                        <ComboBoxItem Content="1.19.1"/>
+                        <ComboBoxItem Content="1.19.2"/>
+                        <ComboBoxItem Content="1.19.3"/>
+                        <ComboBoxItem Content="1.19.4"/>
+                        <ComboBoxItem Content="1.20"/>
+                        <ComboBoxItem Content="1.20.1"/>
+                        <ComboBoxItem Content="1.20.2"/>
+                        <ComboBoxItem Content="1.20.3"/>
+                        <ComboBoxItem Content="1.20.4"/>
+                        <ComboBoxItem Content="1.20.5"/>
+                        <ComboBoxItem Content="1.20.6"/>
+                    </ComboBox>
+                    <Button x:Name="PaperDownloadButton" Content="下载" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+
+            <!-- Spigot 下载界面 -->
+            <Border Background="White" CornerRadius="10" Padding="20" Margin="0,20,0,20" BorderBrush="LightGray" BorderThickness="1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Center">
+                        <TextBlock Text="Spigot" FontSize="18" FontWeight="Bold"/>
+                        <TextBlock Text="Spigot服务器端的介绍" FontSize="14" Opacity="0.7"/>
+                    </StackPanel>
+                    <ComboBox x:Name="SpigotVersionComboBox" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Width="200" Margin="0,0,10,0">
+                        <!-- 版本号选项 -->
+                        <ComboBoxItem Content="1.16.5"/>
+                        <ComboBoxItem Content="1.17"/>
+                        <ComboBoxItem Content="1.17.1"/>
+                        <ComboBoxItem Content="1.18"/>
+                        <ComboBoxItem Content="1.18.1"/>
+                        <ComboBoxItem Content="1.18.2"/>
+                        <ComboBoxItem Content="1.19"/>
+                        <ComboBoxItem Content="1.19.1"/>
+                        <ComboBoxItem Content="1.19.2"/>
+                        <ComboBoxItem Content="1.19.3"/>
+                        <ComboBoxItem Content="1.19.4"/>
+                        <ComboBoxItem Content="1.20"/>
+                        <ComboBoxItem Content="1.20.1"/>
+                        <ComboBoxItem Content="1.20.2"/>
+                        <ComboBoxItem Content="1.20.3"/>
+                        <ComboBoxItem Content="1.20.4"/>
+                        <ComboBoxItem Content="1.20.6"/>
+                    </ComboBox>
+                    <Button x:Name="SpigotDownloadButton" Content="下载" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Page>

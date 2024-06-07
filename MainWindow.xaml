@@ -1,0 +1,30 @@
+﻿<Window
+    x:Class="MinecraftServerLauncher.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    mc:Ignorable="d"
+    Title="Minecraft Server Launcher">
+
+    <Grid>
+        <muxc:NavigationView x:Name="NavView" 
+                             PaneDisplayMode="LeftCompact" 
+                             IsPaneOpen="True" 
+                             IsBackButtonVisible="Collapsed" 
+                             SelectionChanged="OnNavigationViewSelectionChanged">
+            <muxc:NavigationView.MenuItems>
+                <muxc:NavigationViewItem Icon="Home" Content="主页" Tag="home"/>
+                <muxc:NavigationViewItem Icon="Manage" Content="管理服务器" Tag="manage"/>
+                <muxc:NavigationViewItem Icon="Download" Content="下载" Tag="download"/>
+                <muxc:NavigationViewItem Icon="Document" Content="控制台" Tag="console"/>
+                <muxc:NavigationViewItem Icon="Edit" Content="文件编辑" Tag="file_edit"/>
+                <muxc:NavigationViewItem Icon="Help" Content="关于" Tag="about"/>
+                <muxc:NavigationViewItemSeparator/>
+            </muxc:NavigationView.MenuItems>
+
+            <Frame x:Name="ContentFrame"/>
+        </muxc:NavigationView>
+    </Grid>
+</Window>
