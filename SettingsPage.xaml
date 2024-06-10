@@ -5,5 +5,14 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    <!-- 页面内容 -->
+
+    <StackPanel Padding="20">
+        <TextBlock Text="设置" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+        <!-- 其他设置项 -->
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,20,0,0">
+            <TextBlock Text="开发者模式" VerticalAlignment="Center" Margin="0,0,10,0"/>
+            <ToggleSwitch x:Name="DeveloperModeToggle" Toggled="DeveloperModeToggle_Toggled"/>
+        </StackPanel>
+    </StackPanel>
 </Page>
