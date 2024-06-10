@@ -44,9 +44,6 @@ namespace MinecraftServerLauncher
                     case "download":
                         ContentFrame.Navigate(typeof(DownloadPage));
                         break;
-                    case "console":
-                        ContentFrame.Navigate(typeof(ConsolePage));
-                        break;
                     case "file_edit":
                         ContentFrame.Navigate(typeof(FileEditPage));
                         break;

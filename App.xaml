@@ -4,13 +4,21 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:MinecraftServerLauncher"
     RequestedTheme="Light">
+
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
+                <!-- 添加正确的资源字典引用 -->
                 <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
-                <!-- Other merged dictionaries here -->
             </ResourceDictionary.MergedDictionaries>
-            <!-- Other app resources here -->
+
+            <!-- 添加字体资源 -->
+            <FontFamily x:Key="CustomFontFamily">ms-appx:///Assets/MiSans-Medium.ttf#MiSans-Medium</FontFamily>
+
+            <!-- 设置全局样式 -->
+            <Style TargetType="TextBlock">
+                <Setter Property="FontFamily" Value="{StaticResource CustomFontFamily}" />
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

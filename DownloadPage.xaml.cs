@@ -54,7 +54,7 @@ namespace MinecraftServerLauncher
                             PurpurVersionComboBox.SelectedItem = PurpurVersionComboBox.Items.Cast<ComboBoxItem>().FirstOrDefault(item => item.Content.ToString() == latestVersion);
                         }
                     }
-                    catch (Exception ex)
+                    catch
                     {
                         await ShowErrorDialog("无法加载 Purpur 版本信息。");
                     }
@@ -89,7 +89,7 @@ namespace MinecraftServerLauncher
                             PaperVersionComboBox.SelectedItem = PaperVersionComboBox.Items.Cast<ComboBoxItem>().FirstOrDefault(item => item.Content.ToString() == latestVersion);
                         }
                     }
-                    catch (Exception ex)
+                    catch
                     {
                         await ShowErrorDialog("无法加载 Paper 版本信息。");
                     }
