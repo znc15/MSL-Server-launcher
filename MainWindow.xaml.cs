@@ -31,7 +31,11 @@ namespace MinecraftServerLauncher
 
         private void OnNavigationViewSelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
         {
-            if (args.SelectedItemContainer != null)
+            if (args.IsSettingsSelected)
+            {
+                ContentFrame.Navigate(typeof(SettingsPage));
+            }
+            else if (args.SelectedItemContainer != null)
             {
                 switch (args.SelectedItemContainer.Tag.ToString())
                 {
@@ -49,9 +53,6 @@ namespace MinecraftServerLauncher
                         break;
                     case "about":
                         ContentFrame.Navigate(typeof(AboutPage));
-                        break;
-                    case "settings":
-                        ContentFrame.Navigate(typeof(SettingsPage));
                         break;
                 }
             }

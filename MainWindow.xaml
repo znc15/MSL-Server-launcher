@@ -20,7 +20,6 @@
                 <muxc:NavigationViewItem Icon="Download" Content="下载" Tag="download"/>
                 <muxc:NavigationViewItem Icon="Edit" Content="文件编辑" Tag="file_edit"/>
                 <muxc:NavigationViewItem Icon="Help" Content="关于" Tag="about"/>
-                <muxc:NavigationViewItem Icon="Setting" Content="设置" Tag="settings"/>
             </muxc:NavigationView.MenuItems>
 
             <Frame x:Name="ContentFrame"/>
